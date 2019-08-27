@@ -11,7 +11,7 @@ Split the ground truth text file `gt.txt` into train, val and test files, define
 
 RetinaNet as described in this paper [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) uses a focal loss function training on a sparse set of hard examples and prevents vast number of easy negatives during training.
 
-To install and setup Keras RetinaNet, follow the instructions [here] (https://github.com/fizyr/keras-retinanet)
+To install and setup Keras RetinaNet, follow the instructions [here](https://github.com/fizyr/keras-retinanet)
 
 
 # Dataset
