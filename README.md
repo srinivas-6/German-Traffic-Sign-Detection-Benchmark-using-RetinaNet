@@ -59,6 +59,8 @@ Ground Truth annotations
 
 The default backbone of RetinaNet which is resnet50 with pretrained weights on MS COCO dataset was used for transfer learning. The backbone layers were freezed and only top layers were trained.The pretrained MS COCO model can be downloaded [here](https://github.com/fizyr/keras-retinanet/releases). 
 
+After cloning the repo from (https://github.com/fizyr/keras-retinanet) and installing keras-retinanet, run the following from terminal
+
 ```shell
 # Training keras-retinanet
 python keras_retinanet/bin/train.py --weights {PRETRAINED_MODEL} --config ../config.ini --compute-val-loss --weighted-average --multiprocessing --steps 500 --epochs 50 csv ./data/train.csv ./data/classes.csv --val-annotations ./data/val.csv 
