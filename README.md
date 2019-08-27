@@ -41,8 +41,16 @@ The default backbone of RetinaNet which is resnet50 with pretrained weights on M
 
 ## Performance 
 
+### Example detection result
+
+raw      |Ground Truth      | RetinaNet 
+---      |---------|--------------
+![](/assets/raw_1.png)    |![](/assets/tracklet_1.png) | ![](/assets/raw_1.png
+![](/assets/raw_2.png)    |![](/assets/tracklet_2.png) | ![](/assets/raw_1.png
+![](/assets/raw_3.png)    |![](/assets/tracklet_3.png) | ![](/assets/raw_1.png
+
 ### Evaluation metrics
 
-Commonly used metric for object detection is mAP, compued according to the 
+Commonly used metric for object detection is mAP, computed according to the PASCAL VOC dev kit can be found [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html)
 
 Results using the `cocoapi` are shown in the paper ( according to the paper, this configuration achieved a mAP of 0.357).
