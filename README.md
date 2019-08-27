@@ -13,7 +13,7 @@ RetinaNet as described in this paper [Focal Loss for Dense Object Detection](htt
 
 Clone the repository from (https://github.com/fizyr/keras-retinanet) to install and setup Keras RetinaNet, follow the instructions [here](https://github.com/fizyr/keras-retinanet), after you have installed keras-retinanet and defined your data in csv files
 
-There is a [`debug.py`](https://github.com/fizyr/keras-retinanet/blob/master/keras_retinanet/bin/debug.py) tool to help find the most common mistakes. This tool helps to visualize the annotatins and at the same times checks the compatibility of the data
+There is a [`debug.py`](https://github.com/fizyr/keras-retinanet/blob/master/keras_retinanet/bin/debug.py) tool to help find the most common mistakes. This tool helps to visualize the annotations and at the same times checks the compatibility of the data
 
 ### Training
 
