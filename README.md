@@ -5,6 +5,8 @@ Traffic Sign detection palys a significant role in Autonomous driving. This proj
 
 The Dataset can be downloaded from http://benchmark.ini.rub.de/?section=gtsdb&subsection=news
 
+Split the ground truth text file `gt.txt` into train, val and test files, define them in a csv format, for more information follow the guide in [keras-retinanet](https://github.com/fizyr/keras-retinanet)
+
 # Keras RetinaNet
 
 RetinaNet as described in this paper [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) uses a focal loss function training on a sparse set of hard examples and prevents vast number of easy negatives during training.
@@ -29,12 +31,18 @@ Ground Truth annotations
 ![image](/assets/tracklets.png)
 
 
+
 ## Model evaluation
 
-The default backbone of RetinaNet which is resnet50 with pretrained weights on MS COCO dataset was used for transfer learning. The backbone layers were feezed and only top layers were trained. 
+The default backbone of RetinaNet which is resnet50 with pretrained weights on MS COCO dataset was used for transfer learning. The backbone layers were freezed and only top layers were trained.The pretrained MS COCO model can be downloaded [here](https://github.com/fizyr/keras-retinanet/releases). 
+
+![image](/assets/training.JPG)
+
 
 ## Performance 
 
 ### Evaluation metrics
 
-Commonly used metric for object detection is mAP, compued according to the protocol of PASCAL VOC Challenge 2007, The protocol is available [here] (http://host.robots.ox.ac.uk/pascal/VOC/voc2007/devkit_doc_07-Jun-2007.pdf)
+Commonly used metric for object detection is mAP, compued according to the 
+
+Results using the `cocoapi` are shown in the paper ( according to the paper, this configuration achieved a mAP of 0.357).
