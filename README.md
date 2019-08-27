@@ -27,11 +27,23 @@ keras_retinanet/bin/train.py csv {PATH TO ANNOTATIONS FILE} {PATH TO CLASSES FIL
 
 # Dataset
 
+Download and extract the dataset, after extracting you will have the following files:
+```shell
+# images in ppm format
+./FulllJCNN2013/00**.ppm
+
+#  ground truth file
+./FulllJCNN2013/gt.txt
+
+# Classes - ID mapping
+./FulllJCNN2013/classes.txt
+```
+
 The training and evaluation of this project is based on the German Traffic Sign Detection Benchmark Dataset. It includes images of traffic signs belonging to 43 classes and the data distribution is shown below
 
 ![image](/assets/data_dist.png)
 
-Lets have a look at few images of the dataset, follow the code in  for visualization and splitting the data 
+Lets have a look at few images of the dataset, follow the code in [notebook](/data_exploration.ipynb)  for visualization and splitting the data. Make sure that the path specified to load the files are correct. 
 
 ![image](/assets/input.png)
 
