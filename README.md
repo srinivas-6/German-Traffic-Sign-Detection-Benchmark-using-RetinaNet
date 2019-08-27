@@ -31,7 +31,7 @@ The training and evaluation of this project is based on the German Traffic Sign 
 
 ![image](/assets/data_dist.png)
 
-Lets have a look at few images of the dataset, the code for visualization can be found in 
+Lets have a look at few images of the dataset, follow the code in  for visualization and splitting the data 
 
 ![image](/assets/input.png)
 
@@ -70,4 +70,19 @@ raw      |Ground Truth      | RetinaNet
 
 Commonly used metric for object detection is mAP, computed according to the PASCAL VOC dev kit can be found [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/htmldoc/devkit_doc.html)
 
-Results using the `cocoapi` are shown in the paper ( according to the paper, this configuration achieved a mAP of 0.357).
+Results using the `cocoapi` are shown in the paper [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) ( according to the paper, this model configuration achieved a mAP of 0.357 on COCO Dataset).
+
+Similary, mAP value was computed while training the model on GTSD dataset. The mAP graph shows that the model acheived a maximum of  value which less and main reasons are small dataset size and class imbalance. There are several classes with 0 AP resulting in a low mAP value.
+
+## TO DO
+Data Augmentation to tackle the class imbalance problem 
+
+## Resources
+[Traffic-Sign Detection and Classification in the Wild](http://cg.cs.tsinghua.edu.cn/traffic-sign/)
+
+[sridhar912 Traffic Sign Detection and Classification](https://github.com/sridhar912/tsr-py-faster-rcnn)
+
+[Detect and Classify Species of Fish from Fishing Vessels with Modern Object Detectors and Deep Convolutional Networks](https://flyyufelix.github.io/2017/04/16/kaggle-nature-conservancy.html)
+
+## Licenses
+German traffic signs detection specific code is distributed under MIT License.
