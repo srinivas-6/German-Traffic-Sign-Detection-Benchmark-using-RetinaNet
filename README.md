@@ -38,7 +38,12 @@ Download and extract the dataset, after extracting you will have the following f
 # Classes - ID mapping
 ./FulllJCNN2013/classes.txt
 ```
-
+ Place the dataset in the bin folder 
+ 
+ ```shell
+ ./keras_retinanet/bin/FulllJCNN2013
+ ```
+ 
 The training and evaluation of this project is based on the German Traffic Sign Detection Benchmark Dataset. It includes images of traffic signs belonging to 43 classes and the data distribution is shown below
 
 ![image](/assets/data_dist.png)
