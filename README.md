@@ -74,11 +74,20 @@ python keras_retinanet/bin/train.py --weights {PRETRAINED_MODEL} --config ../con
 
 ### Example detection result
 
-raw      |Ground Truth      | RetinaNet 
----      |---------|--------------
-![](/assets/raw_1.png)    |![](/assets/tracklet_1.png) | ![](/assets/raw_1.png
-![](/assets/raw_2.png)    |![](/assets/tracklet_2.png) | ![](/assets/raw_1.png
-![](/assets/raw_3.png)    |![](/assets/tracklet_3.png) | ![](/assets/raw_1.png
+Input      |RetinaNet output       
+---      |---------|
+![](/assets/input_1.png)    |![](/assets/output_1.png) 
+![](/assets/input_2.png)    |![](/assets/output_2.png) 
+![](/assets/input_3.png)    |![](/assets/output_3.png) 
+![](/assets/input_4.png)    |![](/assets/output_4.png) 
+
+**Though the model was able to detect the traffic signs in adverse conditions, there were also some misclassifications due to class imbalance as seen in the class distribution graph
+
+Input      |RetinaNet output | Correct label       
+---      |---------|------------|
+![](/assets/miss_input_1.png)    |![](/assets/miss_output_1.png) |(uneven-road)
+![](/assets/miss_input_2.png)    |![](/assets/miss_output_2.png) |(speed-limit 60)
+![](/assets/miss_input_3.png)    |![](/assets/miss_output_3.png) |(pedestrian crossing)
 
 ### Evaluation metrics
 
@@ -86,7 +95,9 @@ Commonly used metric for object detection is mAP, computed according to the PASC
 
 Results using the `cocoapi` are shown in the paper [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) ( according to the paper, this model configuration achieved a mAP of 0.357 on COCO Dataset).
 
-Similary, mAP value was computed while training the model on GTSD dataset. The mAP graph shows that the model acheived a maximum of  value which less and main reasons are small dataset size and class imbalance. There are several classes with 0 AP resulting in a low mAP value.
+Similary, mAP value was computed while training the model on GTSD dataset. The mAP graph logged in Tensor board shows that the model acheived a maximum of  value 0.30 which is less and main reasons are small dataset size and class imbalance. There are several classes with 0 AP resulting in a low mAP value.
+
+![image](/assets/mAP.PNG)
 
 ## TO DO
 Data Augmentation to tackle the class imbalance problem 
