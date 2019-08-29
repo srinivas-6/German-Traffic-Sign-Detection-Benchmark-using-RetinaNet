@@ -81,7 +81,7 @@ Input      |RetinaNet output
 ![](/assets/input_3.png)    |![](/assets/output_3.png) 
 ![](/assets/input_4.png)    |![](/assets/output_4.png) 
 
-**Though the model was able to detect the traffic signs in adverse conditions, there were also some misclassifications due to class imbalance as seen in the class distribution graph
+**Though the model was able to detect the traffic signs in adverse conditions, there were also some misclassifications due to class imbalance as seen in the class distribution graph**
 
 Input      |RetinaNet output | Correct label       
 ---      |---------|------------|
