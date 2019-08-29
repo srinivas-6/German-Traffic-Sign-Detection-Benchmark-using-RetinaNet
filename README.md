@@ -43,7 +43,7 @@ The training and evaluation of this project is based on the German Traffic Sign 
 
 ![image](/assets/data_dist.png)
 
-Lets have a look at few images of the dataset, follow the code in [notebook](/data_exploration.ipynb)  for visualization and splitting the data. Make sure that the path specified to load the files are correct. 
+Lets have a look at few images of the dataset, follow the code in [notebook](/data_exploration.ipynb)  for visualization and splitting the data. Make sure that the path specified is correct as the notebook uses relative imports to load the files. 
 
 ![image](/assets/input.png)
 
